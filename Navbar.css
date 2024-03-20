@@ -1,0 +1,50 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: transparent; 
+    font-family:  "Helvetica Neue";/* Adjust background color as needed */
+  }
+  
+  .navbar-logo img {
+    width: 100px; /* Adjust logo width as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .navbar-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar-links ul li {
+    margin-right: 20px;
+  }
+  
+  .navbar-links ul li:last-child {
+    margin-right: 0;
+  }
+  
+  .navbar-links ul li a {
+    text-decoration: none;
+    color: #000000; /* Adjust link color as needed */
+  }
+  
+  /* Styles for Avatar component */
+  .MuiAvatar-root {
+    cursor: pointer;
+  }
+  .logout-button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
