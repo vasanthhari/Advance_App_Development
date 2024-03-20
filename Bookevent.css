@@ -1,0 +1,65 @@
+/* BookEventPage.css */
+
+.book-event-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .event-title {
+    text-align: center;
+  }
+  
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 5 columns */
+    grid-gap: 20px;
+  }
+  
+  .image-item {
+    background-color: #ccc; /* Placeholder color */
+    height: 200px; /* Adjust image height */
+    position: relative; /* Add position relative for positioning event names */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: transform 0.3s ease; /* Add transition effect */
+  }
+  
+  /* Unique class names for each image */
+  .item1 { background-image: url('https://www.diytomake.com/wp-content/uploads/2021/03/How-To-Design-And-Decorate-A-Room-for-the-Perfect-Party.jpg'); }
+  .item2 { background-image: url('https://i.pinimg.com/originals/f8/10/9a/f8109a552f5e7f18c40f066032592d00.jpg'); }
+  .item3 { background-image: url('https://i.pinimg.com/originals/69/ed/45/69ed455435f492a9f0c76e5a2776382e.jpg'); }
+  .item4 { background-image: url('https://1.bp.blogspot.com/-ebisd03_rl4/XPnTQl_WzkI/AAAAAAAAAfY/dEAsv_wn7-M7TC5TnwMwJnOoeAQkB039gCLcBGAs/s1600/rainbowfirstbirthdayparty.jpg'); }
+  .item5 { background-image: url('https://i.pinimg.com/originals/69/c3/03/69c30385c2e2ab1b27064cecd4902235.jpg'); }
+  .item6 { background-image: url('https://i.pinimg.com/originals/4e/5c/90/4e5c9060ebc64da507db5a07c35376b8.jpg'); }
+  .item7 { background-image: url('https://i.pinimg.com/originals/9d/89/9b/9d899b3159c4153995d2d0b8fc30d3e7.jpg'); }
+  .item8 { background-image: url('https://cdn.diys.com/wp-content/uploads/2021/04/DIY-Birthday-decor-1.jpg'); }
+  .item9 { background-image: url('https://www.togetherv.com/blog/wp-content/uploads/2021/04/shutterstock_2062979228.jpg'); }
+  
+  /* Additional styling for images */
+  .image-item {
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+  }
+  
+  /* Style for event name */
+  .event-name {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    /* opacity: 0; Hide event name by default */
+    transition: opacity 0.3s; /* Add transition effect for smooth visibility change */
+  }
+  
+  .image-item:hover .event-name {
+    opacity: 1; /* Show event name on hover */
+  }
+  
+  .image-item:hover {
+    transform: scale(1.05); /* Scale up the image on hover */
+  }

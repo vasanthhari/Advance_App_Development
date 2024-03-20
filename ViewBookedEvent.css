@@ -1,0 +1,40 @@
+.booked-events-container {
+    margin: 20px;
+  }
+  
+  .booked-events-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .booked-events-table th,
+  .booked-events-table td {
+    padding: 8px 16px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .booked-events-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .booked-events-table td {
+    vertical-align: top;
+  }
+  
+  .edit-button,
+  .delete-button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+  }
+  
+  .edit-button:hover,
+  .delete-button:hover {
+    background-color: #0056b3;
+  }
+  
